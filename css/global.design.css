@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainView {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  left: 0px;
+  top: 0px;
+  background: #242424;
+  display: grid;
+  grid-template-rows: 23px 1fr;
+}
+
+#MenuView #MenuContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #3C3C3C;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+#MenuView #MenuContainer button {
+  position: relative;
+  border: none;
+  outline: none;
+  background: #3C3C3C;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: initial;
+  height: 100%;
+  box-sizing: border-box;
+  color: #B5B5B5;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#MenuView #MenuContainer button:hover {
+  cursor: pointer;
+  background: #343434;
+}
+
+#LayoutView {
+  display: grid;
+  grid-template-columns: 230px 1fr 230px;
+}
+
+#CenterView {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 150px;
+}
+
+#DockRight {
+  position: relative;
+  background: #282828;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 3px solid #282828;
+}
+
+#DockUp {
+  display: grid;
+  grid-template-rows: 25px 1fr;
+}
+
+#DockDown {
+  display: grid;
+  grid-template-rows: 25px 1fr;
+  border-top: 2px solid #282828;
+}
+
+#BottomDock {
+  position: relative;
+  background: #373737;
+  display: grid;
+  grid-template-rows: 25px 1fr;
+  border-bottom: 3px solid #282828;
+}
+
+#DockTile {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+#DockTile button {
+  position: relative;
+  height: 23px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #404040;
+  border: none;
+  outline: none;
+  border-radius: 3px 3px 0px 0px;
+  bottom: -2px;
+  font-family: arial;
+  font-size: 11px;
+  font-weight: initial;
+  color: #B5B5B5;
+  margin-right: 5px;
+}
+#DockTile button:hover {
+  cursor: pointer;
+  background: #333333;
+}
+
+#DockContent {
+  position: relative;
+  background: #404040;
+}
+
+#DockLeft {
+  position: relative;
+  background: #282828;
+  display: grid;
+  grid-template-rows: 25px 1fr;
+  border: 3px solid #282828;
+}
+
+/*# sourceMappingURL=global.design.css.map */
