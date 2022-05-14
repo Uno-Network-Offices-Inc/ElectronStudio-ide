@@ -1,0 +1,22 @@
+{
+  "name": "electron-studio",
+  "version": "1.0.0",
+  "description": "IDE Fro Electron Framework ",
+  "main": "main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uno-Network-Offices-Inc/ElectronStudio-ide.git"
+  },
+  "author": "Uno Network Offices inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Uno-Network-Offices-Inc/ElectronStudio-ide/issues"
+  },
+  "homepage": "https://github.com/Uno-Network-Offices-Inc/ElectronStudio-ide#readme",
+  "dependencies": {
+    "electron": "^18.2.3"
+  }
+}
