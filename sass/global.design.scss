@@ -1,3 +1,6 @@
+
+// IMPORTS 
+
 @import './theme.design.scss';
 @import './variables.design.scss';
 
@@ -8,6 +11,8 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+// MAIN VIEW 
 
 #MainView{
     position: absolute;
@@ -20,6 +25,9 @@ body{
     display: grid;
     grid-template-rows: 23px 1fr;
 }
+
+// MENU BOX
+
 #MenuView{
     #MenuContainer{
         position: relative;
@@ -51,15 +59,24 @@ body{
         }
     }
 }
+
+// LYOUT VIEW
+
 #LayoutView{
     display: grid;
     grid-template-columns: 230px 1fr 230px;
 }
+
+// DOCK CENTER
+
 #CenterView{
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 150px;
+    grid-template-rows: 25px 1fr 150px;
 }
+
+// DOCK RIGHT
+
 #DockRight{
     position: relative;
     background: #282828;
@@ -68,22 +85,35 @@ body{
     border: 3px solid #282828;
 
 }
+
+// DOCK UP
+
 #DockUp{
     display: grid;
     grid-template-rows: 25px 1fr;
 }
+
+// DOCK DOWN
+
 #DockDown{
     display: grid;
     grid-template-rows: 25px 1fr;
     border-top: 2px solid #282828;
 }
+
+// DOCK BOTTOM VIEW 
+
 #BottomDock{
     position: relative;
     background: #373737;
     display: grid;
     grid-template-rows: 25px 1fr;
     border-bottom: 3px solid #282828;
+    border-top: 3px solid #242424;
 }
+
+// DOCK TITLE
+
 #DockTile{
     position: relative;
     display: flex;
@@ -96,7 +126,7 @@ body{
         box-sizing: border-box;
         padding-left: 10px;
         padding-right: 10px;
-        background: #404040;
+        background: darken( #404040 , 5% );
         border: none;
         outline: none;
         border-radius: 3px 3px 0px 0px;
@@ -111,11 +141,20 @@ body{
             background: darken( #404040 , 5% );
         }
     }
+    button:nth-of-type(1){
+        background: #404040;
+    }
 }
+
+// DOCK CONTENT
+
 #DockContent{
     position: relative;
     background: #404040;
 }
+
+// DOCK LEFT VIEW 
+
 #DockLeft{
     position: relative;
     background: #282828;
@@ -123,3 +162,148 @@ body{
     grid-template-rows: 25px 1fr;
     border: 3px solid #282828;
 }
+
+// CANVA LAYOUT
+
+#CanvaLayout{
+    position: relative;
+    display: grid;
+    grid-template-rows: 18px 1fr;
+    border-top: 3px solid #282828;
+    border: 1px solid #404040;
+}
+
+// CANVA SLOT MAIN 
+
+#CanvaSlot1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+}
+
+// CANVA RULLER UP
+
+#RullerUp{
+    position: relative;
+    background: #1C1C1C;
+}
+
+// CANVA RULLER DOWN
+
+#RullerLeft{
+    position: relative;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+// RULLER SLOT
+
+#RullerSlot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    flex-direction: column;
+    #RullerLine{
+        position: relative;
+        width: 5px;
+        height: 1px;
+        background: #414141;
+        right: 0px;
+        margin-bottom: 7px;
+    }
+    #RullerLine:nth-last-of-type(1){
+        width: 100%;
+    }
+    #RullerLine:nth-last-of-type(10){
+        width: 100%;
+    }
+    #RullerLine:nth-last-of-type(3){
+        width: 8px;
+    }
+    #RullerLine:nth-last-of-type(6){
+        width: 8px;
+    }
+    #RullerLine:nth-last-of-type(9){
+        width: 8px;
+    }
+    #RullerNumber{
+        position: absolute;
+        font-family: arial;
+        font-size: 10px;
+        font-weight: initial;
+        color: #B5B5B5;
+        transform: rotate(-90deg);
+        right: 0px;
+    }
+}
+
+// CANVA VIEW
+
+#CanvaView{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// WINDOW TAMPLATE
+
+#WindowTamplate{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: #F0F0F0;
+    top: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 23px 1fr;
+}
+
+
+// WINDOW TAMPLE TITLE
+
+#WindowTitle{
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+// TITLE WINDOW 
+
+#TitleWindow{
+    position: relative;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 11px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 5px;
+    img{
+        position: relative;
+        width: 11px;
+        margin-right: 3px;
+    }
+}
+
+// WINDOW CONTENT
+
+#WindowContent{
+    position: relative;
+    background-image: url('../assets/backgrounds/PhoXo2.png');
+    background-size: 5px;
+    background-repeat: repeat;
+}
+

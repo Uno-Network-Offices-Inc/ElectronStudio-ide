@@ -1,4 +1,6 @@
 
 # sass sass/global.design.scss:./css/global.design.css ( Route to Global Sass to Global Css )
 
-# ( Sass Watch ) sass --watch sass/global.design.scss:./css/global.design.css
+# ( Sass Watch ) 
+
+sass --watch sass/global.design.scss:./css/global.design.css

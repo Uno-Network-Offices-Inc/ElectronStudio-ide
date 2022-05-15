@@ -56,7 +56,7 @@ body {
 #CenterView {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 150px;
+  grid-template-rows: 25px 1fr 150px;
 }
 
 #DockRight {
@@ -84,6 +84,7 @@ body {
   display: grid;
   grid-template-rows: 25px 1fr;
   border-bottom: 3px solid #282828;
+  border-top: 3px solid #242424;
 }
 
 #DockTile {
@@ -99,7 +100,7 @@ body {
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
-  background: #404040;
+  background: #333333;
   border: none;
   outline: none;
   border-radius: 3px 3px 0px 0px;
@@ -114,6 +115,9 @@ body {
   cursor: pointer;
   background: #333333;
 }
+#DockTile button:nth-of-type(1) {
+  background: #404040;
+}
 
 #DockContent {
   position: relative;
@@ -126,6 +130,129 @@ body {
   display: grid;
   grid-template-rows: 25px 1fr;
   border: 3px solid #282828;
+}
+
+#CanvaLayout {
+  position: relative;
+  display: grid;
+  grid-template-rows: 18px 1fr;
+  border-top: 3px solid #282828;
+  border: 1px solid #404040;
+}
+
+#CanvaSlot1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+}
+
+#RullerUp {
+  position: relative;
+  background: #1C1C1C;
+}
+
+#RullerLeft {
+  position: relative;
+  background: #1C1C1C;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#RullerSlot {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  flex-direction: column;
+}
+#RullerSlot #RullerLine {
+  position: relative;
+  width: 5px;
+  height: 1px;
+  background: #414141;
+  right: 0px;
+  margin-bottom: 7px;
+}
+#RullerSlot #RullerLine:nth-last-of-type(1) {
+  width: 100%;
+}
+#RullerSlot #RullerLine:nth-last-of-type(10) {
+  width: 100%;
+}
+#RullerSlot #RullerLine:nth-last-of-type(3) {
+  width: 8px;
+}
+#RullerSlot #RullerLine:nth-last-of-type(6) {
+  width: 8px;
+}
+#RullerSlot #RullerLine:nth-last-of-type(9) {
+  width: 8px;
+}
+#RullerSlot #RullerNumber {
+  position: absolute;
+  font-family: arial;
+  font-size: 10px;
+  font-weight: initial;
+  color: #B5B5B5;
+  transform: rotate(-90deg);
+  right: 0px;
+}
+
+#CanvaView {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#WindowTamplate {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background: #F0F0F0;
+  top: 40px;
+  border: 1px solid white;
+  display: grid;
+  grid-template-rows: 23px 1fr;
+}
+
+#WindowTitle {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#TitleWindow {
+  position: relative;
+  font-family: arial;
+  font-weight: initial;
+  font-size: 11px;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5px;
+}
+#TitleWindow img {
+  position: relative;
+  width: 11px;
+  margin-right: 3px;
+}
+
+#WindowContent {
+  position: relative;
+  background-image: url("../assets/backgrounds/PhoXo2.png");
+  background-size: 5px;
+  background-repeat: repeat;
 }
 
 /*# sourceMappingURL=global.design.css.map */
