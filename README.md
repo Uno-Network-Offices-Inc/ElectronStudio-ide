@@ -16,12 +16,17 @@
 
 ## Features
 
-- Allows editing files <br> by multiple tabs
-- Read and to edit glsl files
+- ??
 
 ## New features
 
 - ??
+
+## Screens shorts
+
+![Electron Studio - Project](Doc/img2.jpg)
+
+![Electron Studio - Project](Doc/img3.jpg)
 
 ## Technologies
 
@@ -65,7 +70,7 @@
 
 2. Use sass watch to Update <br> css stylesheet
 
--  `$ sass watch- design/global.design.scss:./screen.app/editor.screen/editor.design.css`
+-  `$ sass --watch sass/global.design.scss:./css/global.design.css`
 
 3. Stopping the Sass compiler
 
